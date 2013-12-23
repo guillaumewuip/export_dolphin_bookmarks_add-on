@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ExportDolphinBookmarks</string>
+
+    <string name="hello_world">Hi.</string>
+    <string name="intro">This is a Dolphin Browser Add-on. You can use it directly in the Add-on menu in Dolphin.</string>
+    <string name="what">It\'ll export all your bookmarks in a html file. After that you can import them in an other browser.</string>
+    <string name="nodolphin">You want to use Dolphin but it\'s not installed ? You can download it directly from the Play Store.</string>
+
+
+
+    <string name="short_description">Export your bookmarks</string>
+    <string name="long_description">Export your bookmarks.</string>
+
+</resources>
