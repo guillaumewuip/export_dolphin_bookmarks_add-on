@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dolphin.browser.extension.exportdolphinbookmarks" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <activity
+            android:name="com.dolphin.browser.extension.exportdolphinbookmarks.AboutActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <service android:name=".MyAddonService">
+            <intent-filter>
+                <action android:name="com.dolphin.browser.action.addonservice" />
+            </intent-filter>
+            <meta-data
+                android:name="dolphin_api_key"
+                android:value="k0SGct1zHr01GeAanC5FnovEKV2mbGPV4X+l6QNyDio1BugWgbfvWkQo+z18WfEwAImUc0CTS3ozSfb75gTwnHhAC8aAHdy47R2o4jDYInSPCKVZAjoyeEwMeBEnXeim0qxKhWcszxNnOxagFGxTw0Qdt9wi3nRgsbFlhT9wu2Y=" />
+        </service>
+
+    </application>
+
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission
+        android:name="com.dolphin.browser.permission.READ_BOOKMARKS" />
+
+</manifest>
