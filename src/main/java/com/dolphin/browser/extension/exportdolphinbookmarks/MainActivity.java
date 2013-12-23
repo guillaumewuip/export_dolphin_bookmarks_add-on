@@ -13,12 +13,15 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textView = (TextView) findViewById('textView');
+        TextView textView = (TextView) findViewById(R.id.textView5);
 
         textView.setText(Html.fromHtml(
-                "<b>text3:</b>  Text with a " +
-                        "<a href=\"http://www.google.com\">link</a> " +
-                        "created in the Java source code using HTML."));
+                "This app is "+
+                "<a href=\"https://github.com/guillaumewuip/export_dolphin_bookmarks_add-on\">"+
+                "published on Github under the MIT License</a> "+
+                "by <a href=\"http://github.com/guillaumewuip\">Guillaume Wuip</a> <br>" +
+                "Feel free to fork the project !"
+            ));
         textView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }
