@@ -5,4 +5,6 @@ Export Dolphin Browser Bookmarks Add-On
 This is a Dolphin Browser Add-on witch exports your bookmarks in a html file according to 
 [the bookmarks export Netscape model](http://msdn.microsoft.com/en-us/library/aa753582.aspx).
 
-Build with Android Studio.
+To use it without a Dolphin API-Key, see [the debugging tips section](http://dev.dolphin-browser.com/add-on-guide/api-keys/) on the developper for Dolphin documentation.
+
+Developped with Android Studio.
